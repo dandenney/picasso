@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :comments
+
   devise_for :users
   devise_for :installs
   resources :questions do
@@ -6,6 +8,7 @@ Rails.application.routes.draw do
       put "like", to: "questions#upvote"
       put "dislike", to: "questions#downvote"
     end
+    resources :comments
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

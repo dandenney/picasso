@@ -20,6 +20,22 @@
     <%= @question.get_downvotes.size %>
   <% end %>
 
+  <h3 class="comments_title">
+    <%= @question.comments.count %> Comments
+  </h3>
+
+  <div id="comments">
+    <%= render :partial => @question.comments %>
+  </div>
+
+  <%= simple_form_for [@question, Comment.new]  do |f| %>
+    <div class="field">
+      <%= f.text_area :body, class: "form-control" %>
+    </div>
+    <br>
+    <%= f.submit "Add Comment", class: "btn btn-primary" %>
+  <% end %>
+
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>

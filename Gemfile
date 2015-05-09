@@ -44,3 +44,5 @@ gem 'devise', '~> 3.4.1'
 # Use acts_as_votable for voting
 gem 'acts_as_votable', '~> 0.10.0'
 
+# Use simple_form for comments
+gem 'simple_form', '~> 3.1.0'

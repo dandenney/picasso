@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :installs
   resources :questions
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +57,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # Setting my routes to "something" for devise
+  root to: "questions#index"
 end

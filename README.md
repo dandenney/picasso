@@ -2,6 +2,9 @@
 
 Ask, vote on, and debate questions.
 
+"Computers Are Useless. They Can Only Give You Answers"
+- Pablo Picasso
+
 ## I have no idea what I'm doing
 
 This is my first attempt at a Rails app and I made it by following along with [Mackenzie Child's Raddit Tutorial](https://www.unicasts.com/screencasts/how-to-build-reddit-clone-rails). [Repo](https://github.com/mackenziechild/raddit)

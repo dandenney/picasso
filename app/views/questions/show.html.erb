@@ -10,5 +10,16 @@
   <%= @question.category %>
 </p>
 
+  <%= link_to like_question_path(@question), method: :put do %>
+    Upvote
+    <%= @question.get_upvotes.size %>
+  <% end %>
+
+  <%= link_to dislike_question_path(@question), method: :put do %>
+    Downvote
+    <%= @question.get_downvotes.size %>
+  <% end %>
+
+
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>

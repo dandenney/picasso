@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 # Use Devise for users
 gem 'devise', '~> 3.4.1'
 
+# Use acts_as_votable for voting
+gem 'acts_as_votable', '~> 0.10.0'
+

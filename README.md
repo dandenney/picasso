@@ -1,6 +1,6 @@
 # Picasso
 
-Ask, vote, and debate questions.
+Ask, vote on, and debate questions.
 
 ## I have no idea what I'm doing
 

@@ -9,11 +9,9 @@
 //   @font-face
 // -------------------------------------
 
-// ----- Open Sans ----- //
+// ----- Droid Sans, Serif, Serif Bold ----- //
 
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700)
 
 // -------------------------------------
 //   Colors
@@ -21,17 +19,17 @@
 
 // ----- Palette ----- //
 
-$plum: #4e4e5b
+$geyser: #d1dbe3
 
 // ----- Base ----- //
 
-$c-background-invert: #fff
-$c-background: #ecf0f1
-$c-border: lighten($plum, 30%)
-$c-highlight: $plum
-$c-subdue: lighten($plum, 40%)
+$c-background-invert: mix(#fff, $geyser, 70%)
+$c-background: #ffffff
+$c-border: mix(#fff, $geyser, 50%)
+$c-highlight: #5178cf
+$c-subdue: mix(#000, $geyser, 20%)
 $c-text-invert: #fff
-$c-text: #444
+$c-text: mix(#000, $geyser, 50%)
 
 // ----- Components ----- //
 
@@ -49,14 +47,14 @@ $c-text: #444
 
 $b-borderRadius: 3px
 $b-borderStyle: solid
-$b-borderWidth: 2px
+$b-borderWidth: 1px
 $b-border: $b-borderWidth $b-borderStyle $c-border
 $b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
 
 // ----- Typography ----- //
 
-$b-fontFamily-heading: sans-serif
-$b-fontFamily: sans-serif
+$b-fontFamily-heading: 'Droid Serif', serif
+$b-fontFamily: 'Droid Sans', sans-serif
 $b-fontSize: 16px
 $b-fontSize-xs: 75%
 $b-fontSize-s: 90%
@@ -66,6 +64,7 @@ $b-fontSize-h1: 200%
 $b-fontSize-h2: 150%
 $b-fontSize-h3: 125%
 $b-fontSize-h4: 110%
+$b-fontSize-h5: 100%
 $b-lineHeight: 1.5
 
 // ----- Sizing ----- //

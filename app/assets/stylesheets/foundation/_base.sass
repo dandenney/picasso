@@ -30,14 +30,22 @@ li
 // ----- Headings ----- //
 
 h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4
+h2, .h2
   font-family: $b-fontFamily-heading
+  font-weight: normal
+  line-height: 1.2
+  margin-bottom: $b-space-xs
+  margin-top: 0
+
+h3, .h3,
+h4, .h4,
+h5, .h5
+  font-family: $b-fontFamily
   font-weight: bold
   line-height: 1.2
   margin-bottom: $b-space-xs
   margin-top: 0
+  text-transform: uppercase
 
 h1, .h1
   font-size: $b-fontSize-h1
@@ -50,6 +58,9 @@ h3, .h3
 
 h4, .h4
   font-size: $b-fontSize-h4
+
+h5, .h5
+  font-size: $b-fontSize-h5
 
 // -------------------------------------
 //   Inline Content

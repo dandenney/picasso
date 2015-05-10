@@ -46,3 +46,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 
 # Use simple_form for comments
 gem 'simple_form', '~> 3.1.0'
+
+# Use the best language ever
+gem 'haml-rails'
+gem 'haml', '~> 4.0.0'

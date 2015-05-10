@@ -1,0 +1,28 @@
+.row
+  .cell.well
+
+    %h1.mbm.tac.tcs Questions
+
+    - @questions.each do |question|
+
+      %article.bot.mbm.mtm.pbs.ptl.has-dimmed
+
+        .well.tac
+
+          %h2.tal.mbs
+            &#8220;#{question.title}&#8221;
+
+          %p.ttu.dib.tcs.is-dimmed= question.category
+
+          %nav.dib.is-dimmed
+
+            = link_to 'Discuss', question, class: 'dib mls'
+
+            = link_to dislike_question_path(question), method: :put, class: 'dib mls' do
+              Downvote
+              \#{question.get_downvotes.size}
+
+            = link_to like_question_path(question), method: :put, class: 'dib mls' do
+              Upvote
+              \#{question.get_upvotes.size}
+
